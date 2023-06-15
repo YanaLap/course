@@ -105,3 +105,125 @@
 // } else {
 //    alert('Ви обрали контент 18+')
 // }
+
+// Урок3
+//1
+
+// let number=+prompt('Ввведыть число, щоб отримати його по модулю');
+// alert(Math.abs(number))
+
+//2
+
+// let minutes = +prompt('Введіть хвилини');
+// let seconds = +prompt('Введіть секунди');
+// let watch = +prompt('Введіть години');
+
+// if (!Number.isNaN(minutes) && !Number.isNaN(seconds) && !Number.isNaN(watch)){
+// alert("дані введені корректно")
+
+// }else{
+//    alert("дані введені не корректно")
+// }
+
+//3
+// let numberX = +prompt('Введіть коордити по х');
+// let numberY = +prompt('Введіть коордити по у');
+
+// if (numberX > 0 && numberY > 0) {
+//    alert('Точка буде знаходитися на осі |')
+// }
+
+// else if (numberX < 0 && numberY > 0) {
+//    alert('Точка буде знаходитися на осі ||')
+// }
+// else if (numberX < 0 && numberY < 0) {
+//    alert('Точка буде знаходитися на осі |||')
+// }
+
+// else if (numberX > 0 && numberY < 0) {
+//    alert('Точка буде знаходитися на осі |V')
+// }
+
+// else if (numberX === 0 && numberY > 0 || numberX === 0 && numberY < 0) {
+//    alert('Точка буде знаходитися на осі Y')
+// }
+
+// else if (numberY === 0 && numberX > 0 || numberY === 0 && numberX < 0) {
+//    alert('Точка буде знаходитися на осі X')
+// }
+
+// else if (numberX === 0 && numberY === 0) {
+//    alert('Точка буде знаходитися на початку координат ')
+// }
+// else {
+//    alert('Дані введені не коректно')
+// }
+
+//4
+// let numberMonth = +prompt('Введіть число місяця');
+// switch (numberMonth) {
+//    case 1:
+//       alert('Сiчень');
+//       break;
+//    case 2:
+//       alert('Лютий');
+//       break;
+//    case 3:
+//       alert('Березень');
+//       break;
+//    case 4:
+//       alert('Квітень');
+//       break;
+//    case 5:
+//       alert('Травень');
+//       break;
+//    case 6:
+//       alert('Червень');
+//       break;
+//    case 7:
+//       alert('Липень');
+//       break;
+//    case 8:
+//       alert('Серпень');
+//       break;
+//    case 9:
+//       alert('Вересень');
+//       break;
+//    case 10:
+//       alert('Жовтень');
+//       break;
+//    case 11:
+//       alert('Листопад');
+//       break;
+//    case 12:
+//       alert('Грудень');
+//       break;
+//    default: alert('Некоректні дані');
+
+// }
+
+// 5
+
+// let numberA = +prompt('Введіть перше число ');
+// let numberB = +prompt('Введіть друге число ');
+// let sign = prompt('Введіть знак + - / *');
+// switch (sign) {
+//    case '+':
+//       alert(numberA + numberB);
+//       break;
+
+//    case '-':
+//       alert(numberA - numberB);
+//       break;
+
+//    case '*':
+//       alert(numberA * numberB);
+//       break;
+
+//    case '/':
+//       alert(numberA / numberB);
+//       break;
+
+//    default:
+//       alert("Нет таких значений");
+// }
