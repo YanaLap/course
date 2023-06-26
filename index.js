@@ -176,14 +176,14 @@
 // 5
 // 1 дані
 
-let mMark = 78;
-let hMark = 1.69;
-let mDjon = 92;
-let hDjon = 1.95;
+// let mMark = 78;
+// let hMark = 1.69;
+// let mDjon = 92;
+// let hDjon = 1.95;
 
-let BMImark = (mMark / hMark ** 2).toFixed(2)
-let BMIdjon = (mDjon / hDjon ** 2).toFixed(2)
-let markHigherBMI = 'Марк имеет более высокий BMI'
+// let BMImark = (mMark / hMark ** 2).toFixed(2)
+// let BMIdjon = (mDjon / hDjon ** 2).toFixed(2)
+// let markHigherBMI = 'Марк имеет более высокий BMI'
 
 // 2 дані
 
@@ -198,11 +198,11 @@ let markHigherBMI = 'Марк имеет более высокий BMI'
 
 // 1
 
-if (BMImark > BMIdjon) {
-   console.log('BMI Марка выше, чем у Джона!');
-} else {
-   console.log('BMI Джона выше, чем у Марка!');
-}
+// if (BMImark > BMIdjon) {
+//    console.log('BMI Марка выше, чем у Джона!');
+// } else {
+//    console.log('BMI Джона выше, чем у Марка!');
+// }
 
 // 2
 
@@ -212,3 +212,33 @@ if (BMImark > BMIdjon) {
 //    console.log(`BMI Джона (${BMIdjon}) выше, чем у Марка (${BMImark})! `);
 // }
 
+// дз 4
+// 1
+
+// function getNumber(numberA, numberB) {
+//    if (numberA > numberB) {
+//       return 1
+//    }
+//    if (numberA === numberB) {
+//      return 0
+//    }
+//      return -1
+//   }
+// console.log(getNumber(5, 10))
+
+// 2
+// function getNumber(numberA, numberB, numberC){
+//    console.log(`Ваше число ${numberA}${numberB}${numberC}`)
+// }
+// getNumber(5,2,3)
+
+// 3
+
+// function getSquare(width = length, length = width) {
+
+//    console.log(length * width)
+// }
+// getSquare(3)
+
+// Дз 5
+// 1. 
