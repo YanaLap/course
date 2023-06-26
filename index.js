@@ -284,6 +284,7 @@
 //       console.log(i)
 
 // }
+
 // 2
 // let number = 5
 // for (let i = 1; i <= 100 ; i++) {
@@ -301,6 +302,7 @@
 //   console.log(i)
 // }
 
+// 4.
 // let min = 1
 // let max = 10
 // let result=0;
@@ -310,26 +312,43 @@
 // }
 // console.log(`Число строк ${result}`)
 
-// 
+// 5
 
-// for (; ;) {
-//    let number = 6
-//    if (number % number === 0 && number % 1 === 0) {
-//       console.log(`${number} просте число`)
-//       break
-//    }
-//    console.log(`${number} НЕ просте число`)
+// function table (a){
+// for (let i=1; i<=9; i++)
+// console.log (`${a} x ${i} = ${a*i}`)
 // }
+// table(5)
 
-// let number = 2;
-// for (i = 1; i <= 9; i++) {
+// 6
+// function table(a) {
 
-//    for (j = 1; j <= 9; j++) {
-//       console.log((number + 1) * j)
+//    for (let j = 2; j <= 9; j++) {
+//       for (let i = 1; i <= 9; i++) {
+//          console.log(`${j} x ${i} = ${j * i}`)
+//       }
+//       console.log('-----------------')
 //    }
+
 // }
+// table()
+
+// АБО??
+
+// function table(a) {
+  
+//       for (let i = 1; i <= 9; i++) {
+//          console.log(`${a} x ${i} = ${a * i}`)
+//       }
+
+//    }
+//    for (let j = 2; j <= 9; j++) {
+//       table(j)
+//       console.log("__________")
+//    }
 
 
+// 7
 // function getSum(numberA, numberB, numberC, numberD, numberE){
 // return(numberA+numberB+numberC+numberD+numberE)
 // }
