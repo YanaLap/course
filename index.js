@@ -227,3 +227,110 @@
 //    default:
 //       alert("Нет таких значений");
 // }
+
+
+// Урок 4
+// 1
+
+// let numberA = +prompt("Введіть число А");
+// let numberB = +prompt("Введіть число B");
+// numberA > numberB ? alert(`Ваше число ${numberA}`) : alert(`Ваше число ${numberB} `)
+
+// 2
+// let numberA = +prompt("Введіть число А");
+// numberA % 5 === 0 ? alert(`Ваше число кратне 5`) : alert(`Ваше число НЕ кратне 5 `);
+
+// 3
+// let numberA = prompt("Введіть назву планети");
+// numberA === 'Земля' || numberA === 'земля' ? alert(`Привет, землянин!`) : alert(`Привет, инопланетянин!`)
+
+// 4
+// let a = 5;
+// let b = 10;
+// function getNumber(num1, num2) {
+//    if (num1 < num2) {
+//       return num1;
+//    }
+//    return num2;
+// }
+// console.log(getNumber(a, b))
+
+// 2
+
+// let a = 5;
+
+// function getNumber(number) {
+//    const numberSquared = number ** 2;
+//    console.log(numberSquared)
+//    // return numberSquared;
+// }
+// getNumber(a)
+
+// 3
+
+// let a = 10;
+// let b = 5;
+// let c = '+';
+
+// function getNumber(numberA, numberB, numberC) {
+//    const calc = numberA numberC;
+// }
+
+// Урок5
+
+// 1
+// let number = 5
+// for (let i = 1; i <= 100 ; i++) {
+//       console.log(i)
+
+// }
+// 2
+// let number = 5
+// for (let i = 1; i <= 100 ; i++) {
+
+//    if(i%number==0){
+//       console.log(i)
+//        }
+// }
+
+// 3
+
+// let max = 100
+// let min = 1
+// for (i=min+3 ;i<=max; i+=4){
+//   console.log(i)
+// }
+
+// let min = 1
+// let max = 10
+// let result=0;
+// for (i=min+3 ;i<=max; i+=4){
+//    console.log(`Вивод числа ${i}`)
+//    result++
+// }
+// console.log(`Число строк ${result}`)
+
+// 
+
+// for (; ;) {
+//    let number = 6
+//    if (number % number === 0 && number % 1 === 0) {
+//       console.log(`${number} просте число`)
+//       break
+//    }
+//    console.log(`${number} НЕ просте число`)
+// }
+
+// let number = 2;
+// for (i = 1; i <= 9; i++) {
+
+//    for (j = 1; j <= 9; j++) {
+//       console.log((number + 1) * j)
+//    }
+// }
+
+
+// function getSum(numberA, numberB, numberC, numberD, numberE){
+// return(numberA+numberB+numberC+numberD+numberE)
+// }
+// console.log(getSum(1,2,3,4,5))
