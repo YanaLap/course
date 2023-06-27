@@ -357,10 +357,38 @@
 
 // Урок6
 
-function sum(number1, number2, number3) {
-   if (number3 || number3 === 0) {
-      return number3
-   } else if (number2 || number2 === 0) {
-      return number1 + number2
-   } return number1
-}
+// 1
+
+// function sum(number1, number2, number3) {
+//    if (number3 || number3 === 0) {
+//       return number3
+//    } else if (number2 || number2 === 0) {
+//       return number1 + number2
+//    } return number1
+// }
+
+// 2
+// Найти сумму чисел в промежутке от 15 до 125
+// function summ (n){
+//    if (n===15){
+//       return 15
+//    }
+//    // console.log (n)
+//    return n+summ(n-1)
+// }
+// console.log (summ(125))
+
+// 3
+// *
+// **
+// ***
+// ****
+
+// function star (n){
+//    if (n === '*****'){
+//       return '*****'
+//    }
+// console.log (n)
+// return star(n+'*')
+// }
+// console.log(star ('*'))
