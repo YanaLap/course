@@ -336,7 +336,7 @@
 // АБО??
 
 // function table(a) {
-  
+
 //       for (let i = 1; i <= 9; i++) {
 //          console.log(`${a} x ${i} = ${a * i}`)
 //       }
@@ -353,3 +353,14 @@
 // return(numberA+numberB+numberC+numberD+numberE)
 // }
 // console.log(getSum(1,2,3,4,5))
+
+
+// Урок6
+
+function sum(number1, number2, number3) {
+   if (number3 || number3 === 0) {
+      return number3
+   } else if (number2 || number2 === 0) {
+      return number1 + number2
+   } return number1
+}
