@@ -82,7 +82,7 @@
 // Программа выводит сколько шоколадок может купить пользователь и сколько сдачи у 
 // него останется.
 
- 
+
 // let sum = +prompt('Введіть сумму грошей у гаманці'); //21
 // let сhockoled = +prompt('Введіть ціну за шоколадку');  //5
 // let quantity = (sum - sum%сhockoled )/сhockoled
@@ -549,3 +549,92 @@
 // calculation(money1)
 // calculation(money2)
 // calculation(money3)
+
+// ДЗ 6
+
+// 1. Нарисовать пирамиду с помощью console.log, как показано на рисунке, 
+// только у вашей пирамиды должно быть 20 рядов, а не 5:
+// x
+// xx
+// xxx
+// xxxx
+// xxxx
+
+// function pyramid(n) {
+//    if (n === 1) {
+//       console.log('x')
+//       return 'x'
+
+//    }
+//    let marker = 'x' + pyramid (n-1)
+//       console.log(marker)
+//    return marker
+// }
+// pyramid(20)
+
+
+// 2. Написать функцию, которая принимает время (часы, минуты, секунды) 
+// и выводит его на экран в формате «чч:мм:сс». Если при вызове функции 
+// минуты и/или секунды не были переданы, то выводить их как 00.
+
+// a)
+// let hours = +prompt('Введіть години')
+// let minutes = +prompt('Введіть хвилини')
+// let seconds = +prompt('Введіть секунди')
+// function watch(a, b, c) {
+//    alert(`Час ${a}:${b}:${c}`)
+// }
+// watch(hours, minutes, seconds)
+
+// b
+
+// 3. Написать функцию, которая принимает часы, минуты и секунды и
+// возвращает это время в секундах. 
+// let hours = +prompt('Введіть години')
+// let minutes = +prompt('Введіть хвилини')
+// let seconds = +prompt('Введіть секунди')
+// function watch(a, b, c) {
+//    alert(`Секунд ${a*3600+b*60+c}`)
+// }
+// watch(hours, minutes, seconds)
+
+// 4. Написать функцию, которая принимает количество секунд, переводит
+// их в часы, минуты и секунды и возвращает в виде строки «чч:мм:сс». 
+
+// let seconds = +prompt('Введіть секунди')
+
+// function watch(a) {
+//    let hours = Math.floor(a / 3600);
+//    let minutes = Math.floor((a - hours * 3600) / 60);
+//    let sec = Math.floor(a - hours * 3600 - minutes * 60);
+//    alert(`Час ${hours}:${minutes}:${sec}`)
+// }
+// watch(seconds)
+
+// 5. Написать функцию, которая считает разницу между датами. Функция
+// принимает 6 параметров, которые описывают 2 даты, и возвращает
+// результат в виде строки «чч:мм:сс». При выполнении задания используйте
+// функции из предыдущих 2-х заданий: сначала обе даты переведите в
+// секунды, узнайте разницу в секундах, а потом разницу переведите обратно в
+// «чч:мм:сс».
+
+// let hours1 = +prompt('Введіть години 1 дня');
+// let minutes1 = +prompt('Введіть хвилини 1 дня');
+// let seconds1 = +prompt('Введіть секунди 1 дня');
+
+// let hours2 = +prompt('Введіть години 2 дня');
+// let minutes2 = +prompt('Введіть хвилини 2 дня');
+// let seconds2 = +prompt('Введіть секунди 2 дня');
+
+// function difference(a, b, c, d, e, f) {
+//    let secondsData1 = a * 3600 + b * 60 + c;
+//    let secondsData2 = d * 3600 + e * 60 + f;
+//    let result = Math.abs(secondsData1 - secondsData2)
+
+//    let resultHours = Math.floor(result / 3600);
+//    let resultMinutes = Math.floor((result - resultHours * 3600) / 60);
+//    let resultSeconds = Math.floor(result - resultHours * 3600 - resultMinutes * 60);
+//    alert(`Різниця  ${resultHours}:${resultMinutes}:${resultSeconds}`)
+// }
+
+// difference(hours1, minutes1, seconds1, hours2, minutes2, seconds2)
