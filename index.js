@@ -392,3 +392,16 @@
 // return star(n+'*')
 // }
 // console.log(star ('*'))
+
+// 4
+
+function getStar(n) {
+   if (n === 1) {
+      console.log('*');
+      return '*'
+   }
+   let star = '*' + getStar(n - 1);
+   console.log(star);
+   return star;
+}
+getStar(5);
