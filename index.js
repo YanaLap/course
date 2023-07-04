@@ -395,13 +395,75 @@
 
 // 4
 
-function getStar(n) {
-   if (n === 1) {
-      console.log('*');
-      return '*'
-   }
-   let star = '*' + getStar(n - 1);
-   console.log(star);
-   return star;
-}
-getStar(5);
+// function getStar(n) {
+//    if (n === 1) {
+//       console.log('*');
+//       return '*'
+//    }
+//    let star = '*' + getStar(n - 1);
+//    console.log(star);
+//    return star;
+// }
+// getStar(5);
+
+// Урок 7
+
+// 1.
+
+// let i = 1
+
+// while (i <= 5) {
+//    console.log(i)
+//    i++
+
+// }
+
+// 2
+
+// let i = 1
+// do {
+//    console.log(i)
+//    i++
+// }
+// while (i<=5)
+
+// 3
+// let result = '';
+// let buy = +prompt ('Введіть кількість #')
+// while (buy>=1){
+//  result= result+'#'
+//    buy--
+//    }
+//    console.log (result)
+
+// 4
+
+// let buy = +prompt ('Введіть число')
+// while (buy>=0){
+//    console.log (buy)
+//    buy--
+// }
+
+
+
+// 5.
+// let one = +prompt ('Введіть число 1')
+// let two = +prompt ('Введіть число 2')
+
+// let min = one>=two?two:one
+// while (min>=1){
+//    if (one%min===0 && two%min===0){
+//       alert (min)
+//    }
+//    min--
+// }
+
+
+// 6.
+
+// let result
+// do {
+//    result = +prompt('Рішить приклад 2+2*2')
+// } while (result !== 6)
+// alert('Задача рішена вірно')
+
