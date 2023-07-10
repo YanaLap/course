@@ -638,3 +638,154 @@
 // }
 
 // difference(hours1, minutes1, seconds1, hours2, minutes2, seconds2)
+
+
+// ДЗ7
+// 1.  Запросить у пользователя 10 чисел и подсчитать, сколько он ввел
+// положительных, отрицательных и нулей. При этом также посчитать, сколько
+// четных и нечетных. Вывести статистику на экран.
+
+// let number1 = +prompt('Введіть число 1')
+// let number2 = +prompt('Введіть число 2')
+// let number3 = +prompt('Введіть число 3')
+// let number4 = +prompt('Введіть число 4')
+// let number5 = +prompt('Введіть число 5')
+// let number6 = +prompt('Введіть число 6')
+// let number7 = +prompt('Введіть число 7')
+// let number8 = +prompt('Введіть число 8')
+// let number9 = +prompt('Введіть число 9')
+// let number10 = +prompt('Введіть число 10')
+// let negativeNumbers = 0
+// let positiveNumbers = 0
+// let zeroNumbers = 0
+// let evenNumbers = 0
+// let oddNumbers = 0
+
+// let numbers = [number1, number2, number3, number4, number5, number6, number7, number8, number9, number10]
+// for (let i = 0; i < numbers.length; i++) {
+
+//    if (numbers[i] < 0) {
+//       negativeNumbers++
+//    }
+//    else if (numbers[i] > 0) {
+//       positiveNumbers++
+//    } else {
+//       zeroNumbers++
+//    }
+//    if (numbers[i] % 2 === 0) {
+//       evenNumbers++
+//    } else {
+//       oddNumbers++
+//    }
+// }
+// alert(`Позитивних чисел ${negativeNumbers}, негативних чисел ${positiveNumbers}, нульових чисел ${zeroNumbers}, парних чисел ${evenNumbers}, непарних чисел ${oddNumbers}`)
+
+
+// 2
+// Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить 
+// пример, вывести результат и спросить, хочет ли он решить еще один пример. И 
+// так до тех пор, пока пользователь не откажется.
+
+
+// let result
+
+
+// function calcFunction(a, b, c) {
+//    if (b === '+') {
+//       return a + c;
+//    } else if (b === '-') {
+//       return a - c;
+//    } else if (b === '*') {
+//       return a * c;
+//    } else if (b === '/') {
+//       return a / c;
+//    }
+// }
+
+// let calc = true
+// do {
+
+//    let number1 = + prompt('Введіть число 1')
+//    let sign = prompt('Введіть знак')
+//    let number2 = + prompt('Введіть число 2')
+//    alert(calcFunction(number1, sign, number2))
+//    calc = confirm("Чи хочете Ви рішати далі?")
+
+// }
+// while (calc)
+
+
+// 3.  Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть 
+// следующий день?» и так до тех пор, пока пользователь нажимает OK.
+
+// 4.Написать функцию, которая выводит все числа из заданного пользователем 
+// диапазона в прямом порядке. И еще одну функцию – для вывода в обратном 
+// порядке
+
+// let numberOne = +prompt('Введіть початок діапазона')
+// let numberLast = +prompt('Введіть кінець діапазона')
+// let result
+// let result2
+// function directOrder(a, b) {
+
+//    for (i =a; i <= b; i++) {
+//       result = i
+//       alert(result)
+//    }
+// }
+
+// (directOrder(numberOne, numberLast))
+
+// function reverseOrder(a, b) {
+
+//    for (i = b; i >= a; i--) {
+//       result2 = i
+//       alert(result2)
+//    }
+// }
+
+// (reverseOrder(numberOne, numberLast))
+
+// 5. Напишите программу на JavaScript, чтобы получить первые n чисел Фибоначчи.
+// Примечание: Последовательность Фибоначчи - это последовательность чисел:
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,... Каждое последующее число является суммой двух
+// предыдущих.
+
+// 6. Напишите функцию JavaScript для вычисления множителей положительного
+// целого числа.
+
+
+// function factors(n) {
+
+//    for (i = 1; i <= n; i++)
+//       if (n % i === 0){
+//          console.log(i)
+//       }
+
+      
+// }
+// factors(18); // [1,2,3,6,9,18]
+// factors(19); // [1,19]
+// // factors(20); // [1,2,4,5,10,20]
+
+// 7. Найдите сумму всех целых нечетных чисел, всех целых четных чисел в
+// промежутке от n до m. Результат вывести в формате:
+// <сумма_четных_чисел – сумма_нечетных_чисел>
+
+let n = 2
+let m = 10
+let result
+
+function summ (a,b){
+   let min = a>b ? b: a
+   let max = a>b ? a: b
+   for (i=min; i<max; i++){
+      if (i%2===0){
+         result =i
+        console.log( result)
+      }
+
+   }
+}
+
+summ(n,m)
