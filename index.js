@@ -716,7 +716,20 @@
 
 
 // 3.  Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть 
-// следующий день?» и так до тех пор, пока пользователь нажимает OK.
+// следующий день?» и так до тех пор, пока пользователь нажимает OK
+
+// let day = ['Понеділок','Вівторок','Середа','Четверг','П"ятниця','Субота','Неділя']
+// let result
+// let i=0
+// do{
+//      result = confirm (`День тижня - ${day[i]}. Хочете побачити наступний день тижня?`)
+// i++
+// if (i>=day.length){
+//    i=0
+// }
+// }
+// while (result)
+
 
 // 4.Написать функцию, которая выводит все числа из заданного пользователем 
 // диапазона в прямом порядке. И еще одну функцию – для вывода в обратном 
@@ -724,14 +737,15 @@
 
 // let numberOne = +prompt('Введіть початок діапазона')
 // let numberLast = +prompt('Введіть кінець діапазона')
-// let result
-// let result2
+// let result = []
+// let result2 = []
 // function directOrder(a, b) {
 
 //    for (i =a; i <= b; i++) {
-//       result = i
-//       alert(result)
+//       result.push(i)
+
 //    }
+//    alert(result)
 // }
 
 // (directOrder(numberOne, numberLast))
@@ -739,9 +753,10 @@
 // function reverseOrder(a, b) {
 
 //    for (i = b; i >= a; i--) {
-//       result2 = i
-//       alert(result2)
+//       result2.push(i)
+
 //    }
+//    alert(result2)
 // }
 
 // (reverseOrder(numberOne, numberLast))
@@ -751,20 +766,29 @@
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,... Каждое последующее число является суммой двух
 // предыдущих.
 
+let number = 21;
+let pastNumber = 0;
+let pastNumber2 = 1;
+let result = 0
+function fibonachi(a) {
+
+}
+fibonachi(number)
+
+
 // 6. Напишите функцию JavaScript для вычисления множителей положительного
 // целого числа.
 
 
 // function factors(n) {
-
+// let result = []
 //    for (i = 1; i <= n; i++)
 //       if (n % i === 0){
-//          console.log(i)
-//       }
-
-      
-// }
-// factors(18); // [1,2,3,6,9,18]
+//          result.push(i)
+//               }
+//       return  result
+//    }
+//       document.writeln(factors(18)); // [1,2,3,6,9,18]
 // factors(19); // [1,19]
 // // factors(20); // [1,2,4,5,10,20]
 
@@ -772,20 +796,40 @@
 // промежутке от n до m. Результат вывести в формате:
 // <сумма_четных_чисел – сумма_нечетных_чисел>
 
-let n = 2
-let m = 10
-let result
+// let n = 2;
+// let m = 10;
+// let result=0;
+// let resultMinus=0
+// function summPlus(i){
+//   for (let i = a; i<=m; i++){
+//    if (i>m){
+//       return;
+//    }
+//    if (i%2===0){
+//          result = result + i;
+//          summPlus(++i);
+//        }
+//     else{
+//          resultMinus = resultMinus + i;
+//          summPlus(++i);
+//        }
+//    }
+// }
 
-function summ (a,b){
-   let min = a>b ? b: a
-   let max = a>b ? a: b
-   for (i=min; i<max; i++){
-      if (i%2===0){
-         result =i
-        console.log( result)
-      }
+// summPlus(n)
+// console.log (resultMinus, result)
 
-   }
-}
+// 2
+// function summPlus(a){
+//      for (let i = a; i<=m; i++){
+//       if(i%2===0){
+//          result = i + result
+//             }
+// else{
+//    resultMinus = i + resultMinus
+// }
+//    }
+// }
 
-summ(n,m)
+// summPlus(n)
+// console.log (resultMinus, result)
