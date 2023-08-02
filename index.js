@@ -766,14 +766,14 @@
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,... Каждое последующее число является суммой двух
 // предыдущих.
 
-let number = 21;
-let pastNumber = 0;
-let pastNumber2 = 1;
-let result = 0
-function fibonachi(a) {
+// let number = 21;
+// let pastNumber = 0;
+// let pastNumber2 = 1;
+// let result = 0
+// function fibonachi(a) {
 
-}
-fibonachi(number)
+// }
+// fibonachi(number)
 
 
 // 6. Напишите функцию JavaScript для вычисления множителей положительного
@@ -833,3 +833,318 @@ fibonachi(number)
 
 // summPlus(n)
 // console.log (resultMinus, result)
+
+
+// дз8
+
+// 1
+
+// Дан массив с числами. Найдите сумму квадратов элементов этого массива
+// let masiv = [1,2,3,4,5,6,7,8,9]
+// let result = 0
+// function square (a){
+// for (i=0; i<a.length;i++){
+// result = Math.pow(a[i],2)
+// console.log(result)
+// }
+
+// }
+// square(masiv)
+
+// 2
+// Дан массив с числами. Найдите сумму квадратных корней элементов этого
+// массива.
+// let masiv = [1,4,9,16,25,36,49,64,81]
+// let result = 0
+// function square (a){
+// for (i=0; i<a.length;i++){
+// result+= Math.sqrt(a[i],2)
+
+// }
+
+// console.log(result)
+// }
+// square(masiv).
+
+// 3. Дан массив с числами. Найдите сумму положительных элементов этого
+// массива.
+
+// let masiv = [2,-4,5,6,-10,8,-15,3,5,-15,-7]
+// let result=0
+// function square (a){
+//    for (i=0; i<a.length;i++){
+//       if(a[i]>0){
+// result+=a[i]
+//       }
+//    }
+//    console.log(result)
+//    }
+//    square(masiv)
+
+// 4.
+
+// Дан массив с числами. Найдите сумму тех элементов этого массива, которые
+// больше нуля и меньше десяти.
+
+// let masiv = [2,-4,5,6,-10,8,-15,3,5,-15,-7,22,11,10]
+// let result=0
+// function square (a){
+//    for (i=0; i<a.length;i++){
+//       if(a[i]>0 && a[i]<10){
+// result+=a[i]
+//       }
+//    }
+//    console.log(result)
+//    }
+//    square(masiv)
+
+// 5. Напишите код, который преобразовывает и объединяет все элементы
+// массива в одно строковое значение. Элементы массива будут
+// разделены запятой.
+
+// var vegetables = ['Капуста', 'Буряк', 'Редиска', 'Морква']
+// let result = ""
+// function square(a) {
+//    for (i = 0; i < a.length; i++) {
+
+//       if (i<a.length-1){
+//      result += a[i] + ", "
+
+//       }
+//       else if (i===a.length-1){
+//      result += a[i]
+
+//    }
+//    }
+// }
+
+// square(vegetables)
+// console.log(result)
+
+// 6
+// Найдите наименьший четный элемент массива. Если такого нет, то
+// выведите первый элемент.
+
+// let masiv = [22, 20, 4, 40, 5, 60, 7, 8, 3]
+// let result = masiv [0]
+// function square(a) {
+//    for (i = 1; i < a.length -1; i++) {
+
+//       if (a[i] % 2 === 0 && result < a[i]) {
+//          result = a[i]
+//       }
+//       else {
+//          result = a[0]
+//       }
+
+//    }
+//    return result
+// }
+// console.log(square(masiv))
+
+// 7.
+// Найдите сумму номеров минимального и максимального элементов.
+
+
+// let array = [2, 1, 10, 20, 7, 6, 30, 12, 4]
+// let indexMin = 0
+// let min = array[0]
+// let indexMax = 0
+// let max = array[0]
+// for (let i = 1; i < array.length; i++) {
+//    if (min > array[i]) {
+//       min = array[i]
+//       indexMin = i
+//    }
+//    if (max < array[i]) {
+//       max = array[i]
+//       indexMax = i
+//    }
+// }
+// let sum = indexMin + indexMax
+// console.log(sum)
+
+
+
+
+
+
+// let masiv = [10, 20, 30, 40, 5, 60, 7, 8, 3]
+// let resultMin = 0
+// let resultMax = 0
+
+// function square(a) {
+//    for (i = 0; i < a.length - 1; i++) {
+//       if (a[i] > a[i+1]) {
+//          resultMax = a[i]
+//       }
+//       else{
+//          resultMax = x[i + 1]
+//                }
+
+
+//    //    if (a[i] < a[i+1]) {
+//    //       resultMin = a[i]
+//    //    }
+//    // }
+
+// }
+// return resultMax
+// }
+// console.log((square(masiv)))
+
+// let array = [2, -7, 5, 0, 10, 20, 7, 6, -5, 30, 4]
+
+// function three(x) {
+
+//    let resultMin = 0
+//    let resultMax = 0
+//    for (let i = 0; i < x.length - 1; i++) {
+//       if (x[i] > x[i + 1]) {
+//          resultMax = x[i]
+//       }
+//       if (x[i] < x[i + 1]) {
+//          resultMin = x[i]
+//       }
+//       else {
+//          // result = x[i + 1]
+//       }
+//    }
+//    console.log(resultMax)
+//    console.log(resultMin)
+//    console.log(resultMax + resultMin)
+// }
+// three(array)
+
+
+// let array = [2, 5, 10, 20, 7, 6, 30, 0, 4]
+
+// function three(x) {
+//    let result = 0;
+//    for (let i = 0; i < x.length - 1; i++) {
+//       if (x[i] > x[i + 1]) {
+//          result = x[i]
+//       }
+//       else {
+//          // result = x[i + 1]
+//       }
+//    }
+//    return result
+// }
+// console.log(three(array))
+
+// дз 9
+// 1
+// Дано некоторое число: 12345 Получите массив цифр этого числа (обратите внимание, 
+// что дана не строка, а именно число)
+// let number = 12345;
+// let array = (String(number)).split('')
+// console.log(array)
+// 2
+// Дано некоторое число: 12345 Переверните его: 54321
+// let number = 12345;
+// number = (String(number)).split('').reverse().join('')
+// console.log(number)
+// 3
+// Дано некоторое число: 12345 Найдите сумму цифр этого числа.
+// let number = 12345;
+// let masiv = (String(number)).split('');
+
+// let sum = masiv.reduce((sum, item) => {
+//    return sum + +item;
+//    }, 0);
+//    console.log(sum)
+
+// або
+
+// let number = 12345;
+// let masiv = (String(number)).split('');
+// let sum = 0;
+// masiv.forEach(function(num) {
+// sum += +num;
+// });
+// console.log(sum); 
+// // або
+// let number = 12345;
+// let masiv = (String(number)).split('');
+// let sum=0
+// for(let number of masiv){
+//    sum+=+number
+
+// }
+// console.log(sum)
+
+// 4
+// Дан массив с числами. Увеличьте каждое число из массива на 10 процентов.
+
+// let masiv = [1,2,3,4,5];
+
+// for (let i=0; i<masiv.length; i++){
+//    masiv[i]=  masiv[i]+ masiv[i]*0.1
+// }
+// console.log (masiv)
+
+// або
+// let masiv = [1,2,3,4,5];
+// masiv= masiv.map(i=>i+i*0.1)
+// console.log (masiv)
+
+// 5 // Дан некоторый массив, например, вот такой: [1, 2, 3, 4, 5, 6]
+// По очереди выведите в консоль подмассивы из двух элементов нашего массива:
+// [1, 2]
+// [3, 4]
+// [5, 6]
+
+// let masiv = [1, 2, 3, 4, 5, 6];
+// let result = [];
+// function getMassiv(arr, b=2) {
+// arr.forEach((element, index, array) => {
+//    result.push(element);
+
+//    if (result.length === 2) {
+//       console.log(result);
+//       result.length = 0;
+//    }
+// });
+
+// while (a.length > 0) {
+//    let mas1 = a.splice(0, b);
+//    result.push(mas1);
+// }
+// return result;
+// console.log
+// }
+
+// getMassiv(masiv);
+
+// 6
+// Дана строка. Показать номера символов, совпадающих с последним
+// символом строки.
+
+// let str = 'gfmjgfm jg,i g.ivfgfg'
+// let masiv = str.split('')
+// let masiv1 = []
+
+
+// for(i=0;i<masiv.length;i++){
+//    if((masiv[ masiv.length-1])===masiv[i]){
+//       console.log(i)
+//    }
+
+// }
+
+// 7 Дана строка. Если ее длина больше 10, то оставить в строке только первые
+// 6 символов, иначе дополнить строку символами 'o' до длины 12
+// let str = 'iojg'
+// let len = str.length
+// if (len > 10) {
+//    str = str.substring(0, 6)
+// }
+// else {
+//    for (i = 0; str.length < 12; i++) {
+//       str = str + '0'
+//    }
+// }
+// console.log(str)
+
+// дз10
