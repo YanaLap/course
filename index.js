@@ -467,3 +467,73 @@
 // } while (result !== 6)
 // alert('Задача рішена вірно')
 
+// урок 8
+// 1.
+// let mas = [1, 3, 2, 5, 4, 7, 6, 9, 10, -2];
+// let result = 0
+// for (let i = 0; i < mas.length; i++) {
+//    result += mas[i]
+
+// }
+
+// console.log(result)
+// 2
+
+// let mas = [1, 3, 2, 5, 4, 7, 6, 9, 10, -2];
+// let result = 0
+// for (let i = 0; i < mas.length; i++) {
+//    if (mas[i] % 2 === 0) {
+//       result += mas[i]
+//    }
+// }
+
+// console.log(result)
+
+// 3
+//
+
+// function getArray(num) {
+//    function randomNumber(min, max) {
+//       const r = Math.random() * (max - min + 1) + min
+//       return Math.floor(r)
+//    }
+
+//    let arr = new Array(num);
+//    for (let i = 0; i < arr.length; i++) {
+//       arr[i] = randomNumber(-100, 100);
+//    }
+
+//    return arr;
+
+
+// }
+// let array = getArray(10);
+
+// console.log(array);
+
+// 2
+
+// function two(x) {
+//    for (let i = 0; i < x.length; i++) {
+//       if (x[i] % 2 === 0) {
+//          console.log(x[i])
+//       }
+
+//    }
+// }
+// two(array)
+
+// 4
+// function three(x) {
+//    let result = 0;
+//    for (let i = 0; i < x.length - 1; i++) {
+//       if (x[i] > x[i + 1]) {
+//          result = x[i]
+//       }
+//       else {
+//          result = x[i + 1]
+//       }
+//    }
+//    return result
+// }
+// console.log(three(array))
