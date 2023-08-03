@@ -1148,3 +1148,131 @@
 // console.log(str)
 
 // дз10
+
+// 1. Написать функцию, преобразующую число в объект. Передавая на вход число в 
+// диапазоне [0, 999], мы должны получить на выходе объект, в котором в соответствующих 
+// свойствах описаны разряды числа:
+// - единицы (в свойстве units)
+// - десятки (в свойстве tens)
+// - сотни (в свойстве hundereds)
+// Например, для числа 45 мы должны получить следующий объект:
+// {
+// units: 5, //это единицы
+// tens: 4, //это десятки
+// hundreds: 0, //это сотни
+// }
+// Если число было передано вне [0, 999] диапазона, не целое число или вообще не число,
+// необходимо выдать соответствующее сообщение с помощью console.log и вернуть 
+// пустой объект.
+
+// let number = 45;
+// let arr= (String(number)).split('')
+
+// let obj = {
+// tens: 0,
+// units: 0,
+// hundereds: 0
+// };
+
+// function getobj (a){
+//    if (a<10 && a>0){
+//       obj.tens=+arr[0];
+//       }
+//    else if (a<=99 && a>=10){
+//    obj.tens=+arr[0];
+//    obj.units=+arr[1];
+//    }
+   
+//    else if (a<=999 && a>=100){
+//       obj.tens=+arr[0];
+//       obj.units=+arr[1];
+//       obj.hundereds=+arr[2]
+//       }
+//    else{
+//       console.log(`число не в діапазоні`)
+//       obj={}
+//    }
+// }
+
+// getobj(number)
+// console.log(obj)
+
+
+
+// 2. Функция принимает на вход массив вида:
+// Const animal = [[“typeName”, “jaguar”], [“speed”, 80], [“weight”, 80], [“height”, 75], 
+// [“gender”, “male”], [“yearOfBirth”, 4] ]
+// Результат работы функции: объект, в котором ключом является первый элемент из пар 
+// значений, а второй элемент его значением. Напр. [[“building”, “home”]] => {building: 
+// “home”} – данный массив содержит одну пару ключ-значение, т.о. на выходе объект, 
+// только с одним свойством. В вашем случае будет объект с несколькими свойствами.
+
+// const animal = [["typeName", "jaguar"], ["speed", 80], ["weight", 80], ["height", 75],
+// ["gender", "male"], ["yearOfBirth", 4]]
+
+// let obj = {}
+
+// function getObj(a) {
+//    do {
+//       let resultMasiv = a.splice(0, 1)
+//       obj[resultMasiv[0][0]] = resultMasiv[0][1]
+//       } while (a.length)
+//       console.log(obj);
+// }
+
+// getObj(animal)
+// function getMassiv(arr, b=2) {
+//    arr.forEach((element, index, array) => {
+//       result.push(element);
+   
+//       if (result.length === 2) {
+//          console.log(result);
+//          result.length = 0;
+//       }
+//    });
+   
+// або
+// const animal = [["typeName", "jaguar"], ["speed", 80], ["weight", 80], ["height", 75],
+// ["gender", "male"], ["yearOfBirth", 4]]
+// let obj = {}
+
+
+
+// function getObj(a) {
+//    a.forEach(element => {
+            
+//             obj[element[0]] = element[1]
+// })
+// console.log(obj);
+
+// }
+// getObj(animal)
+
+// або
+// const animal = [["typeName", "jaguar"], ["speed", 80], ["weight", 80], ["height", 75],
+// ["gender", "male"], ["yearOfBirth", 4]]
+
+// console.log(Object.fromEntries(animal))
+
+// 3. Реализовать функцию, осуществляющую обратное, заданию 2, преобразование, т.е.
+// из объекта в массив, каждый элемент которого это массив из двух значений [ключ объекта,
+// значение ключа]
+
+// let obj = {
+//    typeName: 'jaguar',
+//    speed: 80,
+//    weight: 80,
+//    height: 75,
+//    gender: 'male',
+//    yearOfBirth: 4
+//  }
+
+//  console.log(Object.entries(obj));
+// або
+// let arr = []
+// for (element in obj){
+//    if (obj.hasOwnProperty(element)) {
+//       arr.push([element, obj[element]])
+//   }
+// }
+// console.log(arr)
