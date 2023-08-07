@@ -537,3 +537,23 @@
 //    return result
 // }
 // console.log(three(array))
+
+// Урок
+
+let rectangle = {
+   topLeftPoint: {
+      x: 10,
+      y: 15
+   },
+   lowerRightPoint: {
+      x: 2,
+      y: 0
+   }
+
+}
+
+function getFigureData(a){
+console.log(a.topLeftPoint, a.lowerRightPoint)
+}
+
+getFigureData(rectangle)
