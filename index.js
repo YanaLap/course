@@ -1182,7 +1182,7 @@
 //    obj.tens=+arr[0];
 //    obj.units=+arr[1];
 //    }
-   
+
 //    else if (a<=999 && a>=100){
 //       obj.tens=+arr[0];
 //       obj.units=+arr[1];
@@ -1224,13 +1224,13 @@
 // function getMassiv(arr, b=2) {
 //    arr.forEach((element, index, array) => {
 //       result.push(element);
-   
+
 //       if (result.length === 2) {
 //          console.log(result);
 //          result.length = 0;
 //       }
 //    });
-   
+
 // або
 // const animal = [["typeName", "jaguar"], ["speed", 80], ["weight", 80], ["height", 75],
 // ["gender", "male"], ["yearOfBirth", 4]]
@@ -1240,7 +1240,7 @@
 
 // function getObj(a) {
 //    a.forEach(element => {
-            
+
 //             obj[element[0]] = element[1]
 // })
 // console.log(obj);
@@ -1276,3 +1276,133 @@
 //   }
 // }
 // console.log(arr)
+
+// Дз 11
+// Задание 2: Создать объект, хранящий в себе отдельно числитель и 
+// знаменатель дроби, и следующие функции для работы с этим объектом. 
+// 1. Функция сложения 2-х объектов-дробей. 
+// 2. Функция вычитания 2-х объектов-дробей. 
+// 3. Функция умножения 2-х объектов-дробей. 
+// 4. Функция деления 2-х объектов-дробей. 
+// 5. Функция сокращения объекта-дроби.
+
+// let obj = {
+//    numerator1: 168,
+//    denominator1: 240,
+//    addition: function (a, b) {
+//       console.log(a + b)
+//    },
+//    subtraction: function (a, b) {
+//       console.log(a - b)
+//    },
+//    multiplication: function (a, b) {
+//       console.log(a * b)
+//    },
+//    division: function (a, b) {
+//       console.log(a / b)
+//    },
+
+//    reduction: function (a, b) {
+//       for (i = 1; i <= a; i++) {
+//          if (a % i === 0 && b % i === 0) {
+//             c = a / i
+//             d = b / i
+//          }
+
+//       }
+//       console.log(c, d)
+//    }
+// }
+// obj.addition(obj.numerator1, obj.denominator1)
+// obj.subtraction(obj.numerator1, obj.denominator1)
+// obj.multiplication(obj.numerator1, obj.denominator1)
+// obj.division(obj.numerator1, obj.denominator1)
+// obj.reduction(obj.numerator1, obj.denominator1)
+
+// Задание 1: Создать объект, описывающий автомобиль (производитель, 
+//    модель, год выпуска, средняя скорость), и следующие функции для работы с 
+//    этим объектом. 
+//    1. Функция для вывода на экран информации об автомобиле. 
+//    2. Функция для подсчета необходимого времени для преодоления 
+//    переданного расстояния со средней скоростью. Учтите, что через 
+//    каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
+
+// let obj = {
+//    manufacturer: "Ingolstadt",
+//    model: "Audi",
+//    yearOfIssue: 2016,
+//    speed: 50,
+
+//    info: function () {
+//       document.write("<pre>");
+//       document.write(JSON.stringify(obj));
+//       document.write("</pre>");
+//    },
+
+//    time: function (a) {
+//       let time = (a / this.speed)
+
+//       if (time > 4 && time % 4 !== 0) {
+//          time = (Math.floor(time / 4)) + time
+//       }
+//       else if (time > 4 && time % 4 === 0) {
+//          time = (Math.floor(time / 4)) + time - 1
+//       }
+//       console.log(time)
+//    }
+
+// }
+
+// obj.info()
+// obj.time(1400)
+
+
+// Задание 3: Создать массив «Список покупок». Каждый элемент массива 
+// является объектом, который содержит название продукта, необходимое 
+// количество и куплен или нет. Написать несколько функций для работы с таким 
+// массивом. 
+// 1. Вывод всего списка на экран таким образом, чтобы сначала шли 
+// некупленные продукты, а потом – купленные. 
+// 2. Добавление покупки в список. Учтите, что при добавлении покупки с 
+// уже существующим в списке продуктом, необходимо увеличивать 
+// количество в существующей покупке, а не добавлять новую. 
+// 3. Покупка продукта. Функция принимает название продукта и отмечает 
+// его как купленный
+
+let shoppingList = [
+   {
+      milk: 5,
+      bought: "yes"
+   },
+   {
+      ess: 10,
+      bought: "no"
+   },
+   {
+      flour: 500,
+      bought: "no"
+   },
+   {
+      tomatos: 3,
+      bought: "yes"
+   },
+   {
+      cucumbers: 4,
+      bought: "yes"
+   },
+   {
+      pepper: 2,
+      bought: "no"
+   }
+]
+
+function list(a) {
+   for (element in a) {
+
+   }
+
+
+   document.write(JSON.stringify(a));
+
+}
+list(shoppingList)
