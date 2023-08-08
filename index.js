@@ -1196,6 +1196,8 @@
 
 // getobj(number)
 // console.log(obj)
+// або
+
 
 
 
