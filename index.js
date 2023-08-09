@@ -540,20 +540,32 @@
 
 // Урок
 
-let rectangle = {
-   topLeftPoint: {
-      x: 10,
-      y: 15
-   },
-   lowerRightPoint: {
-      x: 2,
-      y: 0
-   }
+// let rectangle = {
+//    topLeftPoint: {
+//       x: 10,
+//       y: 15
+//    },
+//    lowerRightPoint: {
+//       x: 2,
+//       y: 0
+//    }
 
-}
+// }
 
-function getFigureData(a){
-console.log(a.topLeftPoint, a.lowerRightPoint)
-}
+// function getFigureData(a){
+// console.log(a.topLeftPoint, a.lowerRightPoint)
+// }
 
-getFigureData(rectangle)
+// getFigureData(rectangle)
+
+// Урок прорядить ряд чтобы осталось sgjb
+let etalon = 'sgjb'
+let str = 'ugyluhjygtryguhjk gfhjklhuytrfgvb fcgvhklmhgf sedrytuiok ftygiuhoiygt'
+let etalonArr = etalon.split('')
+let arr = str.split('')
+
+
+   
+
+
+// console.log(arr)
