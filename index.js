@@ -1454,3 +1454,88 @@
 
 // buy(shoppingList, "flour");
 // console.log(shoppingList);
+
+// дз 12
+//2.  Создание массива значений Фаренгейта из массива значений Цельсия:
+// let celsius = [-15, -5, 0, 10, 16, 20, 24, 32]
+
+// let fahrenheit = celsius.map(item => item * 1.8 + 32)
+// console.log(fahrenheit)
+// 3 Дана некоторая строка:
+// 'abcde abcde abcde'
+// Замените в ней первый символ каждого слова на '!':
+// '!bcde !bcde !bcde'
+// let str = 'abcde abcde abcde';
+// let arr = str.split(' ');
+// let NewArr = arr.map(element => {
+//    const wrdArray = element.split('') //[ 'a', 'b', 'c', 'd', 'e' ]
+//    const letter = wrdArray.splice(0, 1, '!'); // wrdArray === [ '!', 'b', 'c', 'd', 'e' ] , return [ a ]
+//    console.log(letter);
+//    return wrdArray.join('');
+
+// });
+// let result = NewArr.join(' ')
+// console.log(result)
+
+// 4
+// Дан массив с числами:
+// [1, 2, 3, 3, 4, 5]
+// Проверьте, что в этом массиве есть два одинаковых элемента подря
+
+// let arr = [1, 2, 3, 3, 4, 5]
+// const result = arr.some((element, index, arr) => index!==0 && element===arr[index-1]);
+
+
+// console.log(result);
+
+// 1 
+// Напишите функцию, которая принимает два аргумента и возвращает все числа, 
+// которые делятся на данный делитель. Первый аргумент - это массив чисел, а 
+// второй - делитель.
+// const divisibleBy = (numbers, divisor) => {
+//  let result = numbers.filter(item => item%divisor===0)
+//  console.log(result) 
+//  }
+
+
+// divisibleBy([1, 2, 3, 4, 5, 6], 2)
+
+// 5
+// В цепочках ДНК символы «A» и «T» дополняют друг друга, как «C» и «G». У вас 
+// есть функция с половиной ДНК; вам нужно получить вторую половину. Нить ДНК 
+// никогда не бывает пустой.
+// Input: строка заглавных латинских букв (A, T, C, G)
+// Output: строка заглавных латинских букв
+// DNAStrand ("ATTGC") // return "TAACG"
+// DNAStrand ("GTAT") // return "CATA"
+// Пример входных данных
+// Ожидаемый результат
+// DNAStrand("AAAA")
+// 'TTTT'
+// DNAStrand("ATTGC")
+// 'TAACG'
+// DNAStrand("GTAT")
+// 'CATA
+
+// function DNAStrand(data){
+//    let arr =  data.split('')
+//    let newArr = [];
+//    for (i=0; i<arr.length; i++){
+   
+//       if (arr[i]==='A'){
+//         newArr.push('T') 
+//       } else if (arr[i]==='T'){
+//          newArr.push('A')
+//       } else if (arr[i]==='C'){
+//          newArr.push('G')
+//       } else if (arr[i]==='G'){
+//          newArr.push('C')
+//       }
+
+//    }
+//    let result=newArr.join('')
+//    console.log(result);
+// }
+// DNAStrand("ATTGC")
+// DNAStrand ("GTAT")
+
