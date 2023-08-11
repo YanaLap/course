@@ -569,3 +569,24 @@ let arr = str.split('')
 
 
 // console.log(arr)
+
+
+// cw
+// Eсть следующий обьект с даными
+// const obj ={
+//    'Минск': 'Беларусь',
+//    'Київ': 'Україна',
+//    'Софія': 'Болгарія'
+// }
+
+// for (let key in obj){
+//    console.log(`${key} - это ${obj[key]} ` )
+// }
+
+// 2
+
+// const compact = (array) => {
+//    return array.filter(item =>item)
+// }
+// const data = [1, false, null, undefined, 3, 5, '', 0, NaN]
+// console.log(compact(data));
