@@ -1488,21 +1488,21 @@
 
 // console.log(result);
 
-// 1 
-// Напишите функцию, которая принимает два аргумента и возвращает все числа, 
-// которые делятся на данный делитель. Первый аргумент - это массив чисел, а 
+// 1
+// Напишите функцию, которая принимает два аргумента и возвращает все числа,
+// которые делятся на данный делитель. Первый аргумент - это массив чисел, а
 // второй - делитель.
 // const divisibleBy = (numbers, divisor) => {
 //  let result = numbers.filter(item => item%divisor===0)
-//  console.log(result) 
+//  console.log(result)
 //  }
 
 
 // divisibleBy([1, 2, 3, 4, 5, 6], 2)
 
 // 5
-// В цепочках ДНК символы «A» и «T» дополняют друг друга, как «C» и «G». У вас 
-// есть функция с половиной ДНК; вам нужно получить вторую половину. Нить ДНК 
+// В цепочках ДНК символы «A» и «T» дополняют друг друга, как «C» и «G». У вас
+// есть функция с половиной ДНК; вам нужно получить вторую половину. Нить ДНК
 // никогда не бывает пустой.
 // Input: строка заглавных латинских букв (A, T, C, G)
 // Output: строка заглавных латинских букв
@@ -1521,9 +1521,9 @@
 //    let arr =  data.split('')
 //    let newArr = [];
 //    for (i=0; i<arr.length; i++){
-   
+
 //       if (arr[i]==='A'){
-//         newArr.push('T') 
+//         newArr.push('T')
 //       } else if (arr[i]==='T'){
 //          newArr.push('A')
 //       } else if (arr[i]==='C'){
@@ -1539,3 +1539,344 @@
 // DNAStrand("ATTGC")
 // DNAStrand ("GTAT")
 
+// // ДЗ
+
+
+/**
+ * Описание задачи: Напишите функцию, которая сравнивает два
+массива и возвращает true, если они идентичны.
+//  * Ожидаемый результат: ([1, 2, 3], [1, 2, 3]) => true
+//  * Сложность задачи: 2 of 5
+// //  * @param {Array} firstArray - Массив с примитивными значениями
+// //  * @param {Array} secondArray - Массив с примитивными значениями
+// //  * @returns {boolean}
+// // */
+
+// const isEqual = (firstArray, secondArray) => {
+//    if (firstArray.length !==secondArray.length)  {
+//       return false
+//    }
+
+//    for (i = 0; i < firstArray.length; i++){
+
+//       if (firstArray[i] !== secondArray[i]){
+//          return false
+//       }
+//    }
+//    return true
+// }
+// const arr1 = [1, 2, 3, 4];
+// const arr2 = [1, 2, 3, 4];
+// const arr3 = [1, 2, 3, 5];
+// const arr4 = [1, 2, 3, 4, 5];
+
+// console.log(isEqual(arr1, arr2)); // true
+// console.log(isEqual(arr1, arr3)); // false
+// console.log(isEqual(arr1, arr4)); // false
+
+
+// 1
+//  * Описание задачи: Напишите функцию, возвращает новый массив
+// без предоставленных значений. Используйте примитивные типы.
+//  * Ожидаемый результат: [1, 2, 3, 1, 2] без 1, 2 => [3]
+//  * Сложность задачи: 2 of 5
+//  * @param {Array} array - Массив с примитивными значениями
+//  * @param {?} args - лист значений для удаления
+//  * @returns {Array}
+
+// const without = (array, ...args) => {
+//   return array.filter(item=>!args.includes(item))
+// }
+// const data = [1, 2, 3, 1, 2];
+// console.log(without(data, 1, 2));
+
+
+// 2
+// Unique. Напишите функцию, которая убирает повторяющиеся
+// значения.
+// /**
+//  * Описание задачи: Напишите функцию, которая убирает
+// повторяющиеся значения.
+//  * Ожидаемый результат: [1, 2, 3, 1, 2] => [1, 2, 3]
+//  * Сложность задачи: 2 of 5
+//  * @param {Array<string | number>} array - Массив с примитивными
+// значениями
+//  * @returns {Array}
+
+// const unique = (array) => {
+//    let result = []
+//    array.forEach(element => {
+//       if(!result.includes(element)) result.push(element)
+//    });
+//    return result
+// }
+// const data = [1, 2, 1, 2, 3];
+// console.log(unique(data)); // [1, 2, 3]
+
+// 4. Chunk. Напишите функцию, которая разделяет массив на части
+// заданного размера.
+/**
+ * Описание задачи: Напишите функцию, которая разделяет массив
+на части заданного размера.
+ * Ожидаемый результат: ([1, 2, 3, 4, 5], 2) => [[1, 2], [3, 4],
+[5]]
+ * Сложность задачи: 3 of 5
+ * @param {Array} array - Массив элементов
+ * @param {number} size - Размер чанков
+ * @returns {Array}
+// */
+
+
+
+// const chunk = (array, size) => {
+//    let arr = [];
+//    let result = [];
+//    for (i = 0; i < array.length; i++) {
+//       arr.push(array[i]);
+//       if (arr.length === size || i === array.length - 1) {
+//          result.push(arr);
+//          arr = [];
+//       }
+//    }
+//    return result;
+// }
+// const data = [1, 2, 3, 4, 5, 6, 7];
+// console.log(chunk(data, 2)) // [[1, 2], [3, 4], [5, 6], [7]]
+// console.log(chunk(data, 3)) // [[1, 2, 3], [4, 5, 6], [7]]
+
+
+
+// // 5
+// Описание задачи: Напишите функцию, которая создаст массив из
+// уникальных значений, которые есть в каждом из предоставленных
+// массивов.
+//  * Ожидаемый результат: ([1, 2], [2, 3]) => [2]
+//  * Сложность задачи: 4 of 5
+//  * @param {?} arrays - Массив примитивных значений
+//  * @returns {Array}
+// */
+
+// [[1, 2],[2, 3]]
+// let number = 0;
+// const intersection = (...arrays) => {
+//    return arrays.reduce((acc, item) => {
+//       const matches = item.filter(el => acc.includes(el)); //[2]
+//       return matches;
+//    });
+// }
+
+// const intersection2 = (...arrays) => arrays.reduce((acc, item) => item.filter(el => acc.includes(el)));
+
+// const arr1 = [1, 2];
+// const arr2 = [2, 3];
+// const arr3 = ['a', 'b'];
+// const arr4 = ['b', 'c'];
+// const arr5 = ['b', 'e', 'c'];
+// const arr6 = ['b', 'b', 'e'];
+// const arr7 = ['b', 'c', 'e'];
+// const arr8 = ['b', 'e', 'c'];
+// console.log(intersection(arr1, arr2)) // [2]
+// console.log(intersection(arr3, arr4, arr5)) // ['b']
+// console.log(intersection(arr6, arr7, arr8)) // ['b', 'e'
+
+// cw
+// 1. Написать функцию, которая принимает 2 строки и сравнивает их длину. Функция возвращает 1, если в первой
+// строке больше символов, чем во второй; -1 – если во второй больше символов, чем в первой; или 0 – если строки
+// одинаковой длины.
+
+// let str1 = 'kgfjhklj';
+// let str2 = 'fghjbk ljiokjk fgjhkljuiyghbn'
+
+// function len(a, b) {
+//    if (a.length > b.length) {
+//       return 1
+//    } else if (a.length < b.length) {
+//       return -1
+//    }
+//    else {
+//       return 0
+//    }
+// }
+
+// console.log(len(str1, str2))
+
+// 2 Написать функцию, которая переводит в верхний регистр
+// первый символ переданной строки
+// let str = 'fcgvhbj'
+// function top (a){
+// let topReg=a.slice(0,1).toUpperCase()+a.slice(1)
+// return topReg
+// }
+// console.log(top(str))
+
+// 3
+// Написать функцию, которая считает количество гласных
+// букв в переданной строке.
+
+// let str = 'Yana'
+// function quantity(a) {
+//    let arr = a.toLowerCase().split('')
+//    let result = arr.reduce((acc, item) => {
+//       if (item === 'a' || item === 'e' || item === 'i' || item === 'o' || item === 'u' || item === 'y') {
+//          acc++
+//       }
+//       return acc
+//    }, 0)
+
+//    return result
+// }
+
+// console.log(quantity(str));
+
+// let str = 'yana'
+// function quantity(a) {
+//    let arr = a.toLowerCase().split('')
+//    let arrVoiced = ['a','e','i','o','u','y']
+
+//    let result = arr.reduce((acc, item) => {
+//       if (arrVoiced.includes(item)){
+//          acc++
+//       }
+//       return acc
+//    }, 0)
+
+//    return result
+// }
+
+// console.log(quantity(str));
+
+// 4 Написать функцию для проверки спама в переданной
+// строке. Функция возвращает true, если строка содержит
+// спам. Спамом считать следующие слова: 100% бесплатно,
+// увеличение продаж, только сегодня, не удаляйте, ххх.
+// Функция должна быть нечувствительна к регистру.
+
+// let str = '100% бесплатно dgfhbcxdgnb  fxhb'
+// let etalon = ['100% бесплатно', 'увеличение продаж', 'только сегодня', 'не удаляйте', 'ххх']
+// function spam (a){
+// bottom= a.toLowerCase()
+//  let result =  etalon.some((item)=> bottom.includes(item))
+//    return result
+// }
+// console.log(spam(str));
+
+// 5
+// Написать функцию сокращения строки. Функция принимает строку и ее максимальную длину. Если длина строки
+// больше, чем максимальная, то необходимо отбросить
+// лишние символы, добавив вместо них троеточие.
+// Например: truncate(“Hello, world!”, 8) должна вернуть
+// “Hello...”.
+
+// let str = 'Hello, world!'
+// function cuts (a, b){
+// if (a.length>b){
+//    return str.slice(0,b-3)+`...`
+// }
+// }
+
+// console.log(cuts(str, 8))
+
+// 6
+// Написать функцию, которая проверяет, является ли перeданная строка палиндромом
+// let str = 'коту тащат уток'
+// function palindrome (a) {
+//        let viceVersa = a.split('').reverse().join('')
+//        console.log(viceVersa);
+//         return (viceVersa === a)
+// }
+// console.log(palindrome(str))
+
+// 7
+// Написать функцию, которая считает количество слов в
+// предложении.
+// let str = 'yghjknlkjhugyfgy vghbujnkjhb vghj gy gyhuj gyhh gk ghv gy yggggggg g'
+
+// function quantity (a){
+// let result = a.split(' ').length
+// return result
+
+
+// }
+// console.log(quantity(str))
+
+// або
+// function quantity (a){
+
+// let result = a.split(' ').reduce ((acc, item)=>{
+//  acc++
+//  return acc
+
+// },0)
+// return result
+// }
+// console.log(quantity(str))
+
+// 9
+// Написать функцию, которая считает среднюю длину слова
+// в предложении
+
+// let str = 'Зараз на вулиці світить сонечко'//5+2+6+7+7=27
+
+// function wordLength(params) {
+//  let res=  params.split(' ').reduce((acc,item)=>{
+// acc = acc+ item.length
+// return acc
+//    },0)
+//    return (res/params.split(' ').length)
+// }
+// console.log(wordLength(str))
+
+// 8. Написать функцию, которая возвращает самое длинное 
+// слово из предложения.
+let str = 'Зараз на вулиці світить сонце'//5+2+6+7+5
+// let result = ''
+
+// function wordLength(params) {
+//    let arr = params.split(' ')
+
+//    for (let i = 0; i < arr.length; i++) {
+//       if (result.length < arr[i].length) {
+//          result = arr[i]
+//       }
+//    }
+//    return result
+// }
+
+// console.log(wordLength(str))
+
+function wordLength(params) {
+   let arr = params.split(' ');
+ let result =  arr.reduce((acc,item)=>{
+  
+     if(acc.length<item.length){
+      acc = item
+     }
+     return acc
+   }) 
+   
+   return result    
+   }
+   
+   console.log(wordLength(str))
+   
+
+
+// 10 Написать функцию, которая принимает строку и символ
+// и выводит индексы, по которым находится этот символ в
+// строке. Также вывести, сколько всего раз встречается этот
+// символ в строке.
+// let str = 'Зараз на вулиці світить сонце'
+
+// function ind(a, b) {
+//    let arr = []
+//    let inpuArray = a.toLowerCase().split('')
+//    inpuArray.forEach((element, index) => {
+//       if (element === (b.toLowerCase())) {
+//          arr.push(index)
+//       }
+
+//    });
+//    console.log(`Символ зустрічається ${arr.length} рази`, arr)
+// }
+
+// ind(str, 'з')
