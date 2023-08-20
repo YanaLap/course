@@ -1828,7 +1828,7 @@
 
 // 8. Написать функцию, которая возвращает самое длинное 
 // слово из предложения.
-let str = 'Зараз на вулиці світить сонце'//5+2+6+7+5
+// let str = 'Зараз на вулиці світить сонце'//5+2+6+7+5
 // let result = ''
 
 // function wordLength(params) {
@@ -1844,21 +1844,21 @@ let str = 'Зараз на вулиці світить сонце'//5+2+6+7+5
 
 // console.log(wordLength(str))
 
-function wordLength(params) {
-   let arr = params.split(' ');
- let result =  arr.reduce((acc,item)=>{
-  
-     if(acc.length<item.length){
-      acc = item
-     }
-     return acc
-   }) 
-   
-   return result    
-   }
-   
-   console.log(wordLength(str))
-   
+// function wordLength(params) {
+//    let arr = params.split(' ');
+//  let result =  arr.reduce((acc,item)=>{
+
+//      if(acc.length<item.length){
+//       acc = item
+//      }
+//      return acc
+//    }) 
+
+//    return result    
+//    }
+
+//    console.log(wordLength(str))
+
 
 
 // 10 Написать функцию, которая принимает строку и символ
@@ -1880,3 +1880,191 @@ function wordLength(params) {
 // }
 
 // ind(str, 'з')
+
+// Д
+
+const users = [
+  {
+    name: 'John',
+    age: 20,
+    isActive: true,
+    rang: 'admin',
+    salary: 1000,
+    peculiarities: {
+      achievements: [
+        {
+          name: 'Head of unit',
+          stars: 2
+        },
+        {
+          name: 'Speaker',
+          stars: 1
+        },
+        {
+          name: 'Man of the year',
+          stars: 3
+        }
+      ]
+    }
+  },
+  {
+    name: 'Sean',
+    age: 25,
+    isActive: true,
+    rang: 'user',
+    salary: 600,
+    peculiarities: {
+      achievements: [
+        {
+          name: 'Member of community',
+          stars: 1
+        }
+      ]
+    }
+  },
+  {
+    name: 'Jack',
+    age: 19,
+    isActive: true,
+    rang: 'user',
+    salary: 800,
+    peculiarities: {
+      achievements: [
+        {
+          name: 'Member of community',
+          stars: 1
+        },
+        {
+          name: 'Speaker',
+          stars: 1
+        }
+      ]
+    }
+  },
+  {
+    name: 'Anna',
+    age: 30,
+    isActive: false,
+    rang: 'user',
+    salary: 400,
+    peculiarities: {
+      achievements: [
+        {
+          name: 'Member of community',
+          stars: 1
+        }
+      ]
+    }
+  }
+];
+
+// 1. Написать функцию которая выводит средний возраст всех пользователей в консоль.
+// function averageAge(params) {
+//   return params.reduce((acc,item)=>acc+item.age,0)/params.length
+//  }
+// console.log(averageAge(users));
+
+// 2. Написать функцию которая выводит имена активных пользователей и тех кто не является админом на экран в виде: "Наши пользователи: {имена ползователей через запятую}"
+
+// let result = []
+// function nameComanda(active) {
+//   active.forEach(element => {
+//     if (element.isActive && element.rang === 'user') {
+//       result.push(element.name)
+//     }
+
+//   });
+//   console.log(`Наши пользователи: ${result.join(', ')}`)
+// }
+// nameComanda(users)
+
+
+// function nameComanda(active) {
+//  let result = active.reduce((acc,item) => {
+//     if (item.isActive && item.rang === 'user') {
+//       const sep = acc.length ? ', ' : ''
+//     acc = acc + sep + item.name
+
+//         }
+//    return acc
+//   },'');
+//   return (`Наши пользователи: ${result}`)
+// }
+// console.log(nameComanda(users))
+// //3. Найти максимальную зп среди всех ползователей и админов и вывести ее в консоль
+// let arr = []
+// function maxSalary(a){
+// for (let element of a){
+//   arr.push(element.salary)
+// }
+// return Math.max(...arr)
+// }
+// console.log(maxSalary(users));
+
+// або
+
+// function maxSalary(a) {
+//   let arr = a.map(item => item.salary)
+//   return Math.max(...arr)
+// }
+// console.log(maxSalary(users));
+
+//4. Вывести на экран все достижения ползователей и админов, посчитать их количество и отсортировать по звездам от большего к меньшему
+
+// function summ(a){
+
+// }
+// console.log(summ(users))
+
+// ДЗ
+// 1 // Найти причину ошибки программы.
+//Найти произведение элементов массива, на четных позициях (с индексами 0, 2, 4, ...)
+//Результат работы программы: -32598720
+
+// const arr = [2, 4, 7, 9, 5, 3, 12, 41, -14, -25, 36, 12, -7, 5, -11, -12];
+// let rezult = 1;
+// let poz = 0;
+// for (const elem of arr) {
+//   if (poz % 2 === 0) {
+//     rezult *= elem;
+//   }
+//   poz++;
+// }
+// console.log(rezult);
+
+// 2
+//Найти позицию последней гласной буквы в строке.
+//Правильный ответ: 72
+// const etalon = "аеиоуыэюя";
+// const str =
+//   "рывр пр пвропф вфлп арфвп арпфнк рсмярп рмояпав ромвава пва рпяавло рпляопрзшцг";
+
+// function findLastLetter(str, eStr) {
+//   const letterIndex = str.split('').findLastIndex((item) => eStr.includes(item));
+//   return letterIndex;
+// }
+// console.log(findLastLetter(str, etalon));
+
+// 3
+
+// Найти общую сумму всех продаж (сумму всех элементов массивов обекта).
+// Верный ответ: 788
+
+// const dataArr = {
+//   type: "User data",
+//   isNewData: true,
+//   newPrice: [125, 125, 145, 35, 45, 74, 36, 14],
+//   oldData: {
+//     type: "Old User Data",
+//     isNewData: false,
+//     price: [14, 2, 45, 41, 23, 11, 20, 11, 5, 6, 7, 4]
+//   }
+// };
+
+// function sumAllPrices(obj) {
+//   let sumOldPrice = obj.oldData.price.reduce((acc, item) => acc + item, 0);
+//   let sumNewPrice = obj.newPrice.reduce((acc, item) => acc + item, 0);
+//   return sumOldPrice + sumNewPrice;
+// }
+
+// console.log(sumAllPrices(dataArr));
