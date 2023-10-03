@@ -2009,13 +2009,28 @@ const users = [
 // }
 // console.log(maxSalary(users));
 
-//4. Вывести на экран все достижения ползователей и админов, посчитать их количество и отсортировать по звездам от большего к меньшему
+// 4. Вывести на экран все достижения ползователей и админов, посчитать их количество и отсортировать по звездам от большего к меньшему
 
-// function summ(a){
+// function summ(a) {
+//   let result = a.reduce((acc, item) => {
+//     acc.push(item.peculiarities.achievements)
+//     return acc
+//   }, [])
+//   result = result.flat(1)
 
+//   let arr = result.reduce((acc, item) => {
+//     item.count = 1;
+//     acc = item + item.count
+//     if (acc.includes(item.name)) {
+//       item.count++
+//     }
+
+
+//   }, [])
+//   return arr
 // }
 // console.log(summ(users))
-
+// Вывести на экран все достижения ползователей и админов, посчитать их количество и отсортировать по звездам от большего к меньшему
 // ДЗ
 // 1 // Найти причину ошибки программы.
 //Найти произведение элементов массива, на четных позициях (с индексами 0, 2, 4, ...)
@@ -2068,3 +2083,280 @@ const users = [
 // }
 
 // console.log(sumAllPrices(dataArr));
+
+
+// 1. Удалить 1 и последний символ у строки
+
+// function removeChars(str) {
+//  return str.slice(1, str.length);
+// }
+
+// console.log(removeChars('fghkgyghj'))
+// 2 проверить полиндром ли
+// function isPalendrome(line) {
+//  let a = line.toString().toLowerCase().split('').reverse().join('')
+//   return String(line).toLowerCase() === a;
+// }
+
+// console.log(isPalendrome('ghbjnkhyg'))
+// console.log(isPalendrome(12321))
+
+// 3
+// function isAnagram(test, original) {
+//   if(test.length === original.length){
+//     test.toLowerCase().split(' ').forEach(element => {
+//       item.includes(original.toLowerCase())
+
+//       })
+//       return true
+//   }
+
+// }
+
+// console.log(isAnagram('foefet', 'toffee'));
+// console.log(isAnagram('Buckethead', 'DeathCubeK'));
+
+// 4 Анаграмм?
+// function isAnagram(test, original) {
+//   let str1 = test.toLowerCase().split('').sort().join('')
+//   let str2 = original.toLowerCase().split('').sort().join('')
+//   return str1 === str2
+// }
+// console.log(isAnagram('foefet', 'toffee'));
+// console.log(isAnagram('Buckethead', 'DeathCubeK'));
+
+// 5 Факториал
+
+// function factorial(n) {
+//   let result = 1
+//   if (n>=0 || n<=12){
+//     for(let i=1; i<=n; i++){
+// result = result*i
+//     }
+//     return result
+//   }
+//   else{
+//     return 'ошибка'
+//   }
+
+// }
+// console.log(factorial(3))
+// console.log(factorial(-2))
+// console.log(factorial(13))
+// console.log(factorial(0))
+// console.log(factorial(12))
+// console.log(factorial(6))
+// console.log(factorial(5))
+
+// function findShow(str) {
+// let arr =  str.split(' ');
+// let result = arr.reduce((acc,item)=>{
+//   if(!acc || acc.length>item.length){
+// acc=item.length
+//   }
+// return acc
+//  })
+//  return result
+// }
+// console.log(findShow('dhgf rr grdhkjfgh dshflkejd sgrahkf.dszoif.hera.o'))
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+// let arrNow=[]
+// function fizzBuzz(str) {
+// str.forEach(element => {
+//  if(element%3===0 && element%5===0){
+//     arrNow.push('FizzBuzz')
+//  }
+//    else if(element%3===0){
+
+//       arrNow.push('Fizz')
+//     }
+//     else if(element%5===0){
+//        arrNow.push('Buzz')
+//     }
+
+//     else{
+//       arrNow.push(element)
+//     }
+//   });
+//   return arrNow
+// }
+// console.log(fizzBuzz(arr))
+
+
+// С/р
+
+
+//Task 1
+// Создайте функцию, которая принимает целое число в качестве аргумента
+// и возвращает «Четное» для четных чисел или «Нечетное» для нечетных чисел.
+// console.log('---------Task 1---------')
+
+// function even_or_odd(number) {
+//   if (number % 2 === 0) {
+//     return 'Четное число'
+//   } else {
+//     return 'Нечетное число'
+//   }
+// }
+
+// console.log(even_or_odd(7))
+// console.log(even_or_odd(16))
+// console.log(even_or_odd(257))
+// console.log(even_or_odd(12548))
+
+
+//Task 2
+// Вы получаете массив чисел, возвращаете сумму всех положительных чисел.
+//     Пример [1,-4,7,12] => 1 + 7 + 12 = 20 Примечание. Если суммировать нечего, сумма по умолчанию равна 0.
+// console.log('---------Task 2---------')
+// let arrMas = [-1,-4,-7,-12]
+// function positiveSum(arr) {
+//  let result = arr.reduce((acc, item)=>{
+//     if (item>=0){
+//       acc=acc+item
+//     }
+// return acc
+//   },0)
+//     return result;
+// }
+// console.log(positiveSum(arrMas))
+// //Task 3
+// // Добро пожаловать. В этом ката вас просят возвести в квадрат каждую цифру числа и соединить их. Например,
+// // если мы пропустим через функцию 9119, получится 811181, потому что 9 — это 81, а 1 — это 1.
+// // Примечание. Функция принимает целое число и возвращает целое число.
+// console.log('---------Task 3---------')
+// function squareDigits(num) {
+//   let result = num.toString().split('').reduce((acc, item) => {
+//     acc = acc + item * item
+//     return acc
+//   }, '')
+//   return +result;
+// }
+
+// console.log(squareDigits(9119))
+
+
+// // Task 4
+// // Основная идея заключается в подсчете всех встречающихся символов в строке. Если у вас есть строка типа "aba",
+// // то результат должен быть {'a': 2, 'b': 1}. Что делать, если строка пуста?
+// // Тогда результатом должен быть пустой литерал объекта {}.
+// console.log('---------Task 4---------')
+
+// function count(string) {
+//   let obj = {}
+//   string.split('').forEach(element => {
+//     if (obj[element]) {
+//       obj[element] = obj[element] + 1
+//     } else {
+//     obj[element] = 1
+//     }
+//   });
+//   return obj
+// }
+// console.log(count('kjdskjhfksdjkfhk'));
+
+// // Task 5
+// /*
+// Highest and Lowest
+// Input: строка состоящая из чисел, разделенных пробелами. Все числа валидны, дополнительная валидация не требуется. Строка содержит
+//  минимум 1 число.
+// Output: строка, состоящаю из двух чисел (наибольшего и наименьшего), разделенных пробелом. Наибольшее число идет первым.
+// Пример входных данных
+// Ожидаемый результат
+// highAndLow("1 2 3 4 5");
+// "5 1"
+// highAndLow("1 2 -3 4 5");
+// "5 -3"
+// highAndLow("1 9 3 4 -5");
+// "9 -5"
+//  */
+// function highAndLow(arg) {
+//   let number1 = arg.split(' ').reduce((acc, item) => {
+//     if (!acc || acc < item) {
+//       acc = item
+//     }
+//     return acc
+//   }, 0)
+
+//   let number2 = arg.split(' ').reduce((acc, item) => {
+//     if (!acc || acc > item) {
+//       acc = item
+//     }
+//     return acc
+//   }, 0)
+//   return (`${number1} ${number2}`)
+// }
+// console.log(highAndLow("1 2 3 4 5"));
+// console.log(highAndLow("1 2 -3 4 5"));
+// console.log(highAndLow("1 9 3 4 -5"));
+
+// // Task 6
+// /*
+// Создайте функцию, которая принимает массив в качестве аргумента и возвращает true или false в зависимости от того,
+// является ли среднее всех элементов в массиве целым числом или нет. Предусмотреть валидацию на некорректные данные,
+// в расчете принимаем только элементы типа number.
+//  */
+// let str = [4,2,3,23,1,2,43,0]
+// function f(arr) {
+//   let length = arr.length
+// let result = str.reduce((acc,item)=>{
+//  acc = acc + item
+//  return acc
+// },0)
+// if (result%length===0){
+//   return true
+// }
+// return false
+// }
+// console.log(f(str));
+
+// // Task 7
+// /*
+// Минимальные значения
+// На вход функции подается массив строк. Каждая строка состоит из чисел, разделенных пробелом.
+// Найти сумму минимальных чисел всех строк.
+// Input: массив строк, цифры в которых разделены пробелами
+// Output: число
+
+// Пример входных данных
+// Ожидаемый результат
+// [
+// ‘1 2’
+// ]
+// 1
+
+// [
+// ‘1 2’,
+// ‘-3 4 2’
+// ]
+// -2
+
+// [
+// “1 2 22 55 63”,
+// “2 5 0”,
+// “3 0 0”,
+// “99 99 99 999 99999 999 999 99”,
+// “0 0 0 0 0”,
+// ]
+// 100
+
+// // //  */
+// function minSum(arg) {
+// let result = arg.reduce((acc,item)=>{
+//  let arr = item.split(' ')
+// let number = Math.min(...arr)
+
+// return acc + number
+// },0)
+// return result
+// }
+
+
+// let str = [
+//   '1 2',
+//   '-3 4 2'
+// ]
+// console.log(minSum(str));
+
+
